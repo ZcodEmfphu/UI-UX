@@ -1,0 +1,94 @@
+
+body{
+    padding: 40px;
+    background-color: powderblue;
+}
+
+p{
+    color: black;
+}
+
+.position{
+
+}
+
+.wrapper{
+    width: 100%;
+    height: 400px;
+    background-color:azure;
+    position: relative;
+}
+
+.boxed{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 0 auto;
+
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+ /* làm center với inline block */
+
+/* position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%); */
+
+
+.dropdown{
+    width: 300px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 30px;
+    position: relative;
+
+}
+
+.dropdown-select{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.dropdown-value{
+
+}
+
+.dropdown-list{
+    /* margin-top: 20px; */
+    border: 1px solid #eee;
+    /* display: none; */
+
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item{
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-list{
+    opacity: 1;
+    visibility: visible;
+
+}
