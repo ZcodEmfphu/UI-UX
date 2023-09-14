@@ -1,0 +1,23 @@
+@import 'index_2';
+@import 'variable';
+@import 'mixin'; 
+
+header{
+    background-color:$main-color;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer-button{
+    @include buttonStyle();
+}

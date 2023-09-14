@@ -1,0 +1,9 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #1a1c28; */
+}
+
+*{
+    box-sizing: border-box;
+}
