@@ -1,0 +1,78 @@
+$primary-color: #ffc87a;
+$secondary-color: #1a2b5f;
+html{
+    font-size: 62.5%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.container{
+    padding-top: 2rem;
+    max-width: 1440px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto;
+}
+.header{
+    &__inner{
+        @include flex(center, space-between);
+    }
+    &__menu{
+        &-list{
+            @include flex(center);
+        }
+        &-item{
+            margin-left: 2rem;
+            &:last-child{
+                margin-left: 2rem;
+            }
+        }
+        &-link{
+            font-size: 1.4rem;
+            color: $secondary-color;
+            transition: color .25s linear , border .25s linear;
+            &:hover{
+                color: $primary-color;
+
+            }
+        }
+        &-search{
+            padding: 1rem 1rem;
+            display: inline-block;
+            border: 1px solid;
+            border-radius: 2.5rem;
+        }
+    }
+    
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $secondary-color;
+    &__text {
+        color:#ffc87a 
+    }
+}
