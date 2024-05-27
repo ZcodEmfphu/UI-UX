@@ -1,55 +1,209 @@
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.button {
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  margin: 40px 4px 40px 0px;
+}
+
+table.table {
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+  padding-top: 10px;
+}
+
+table.table .col-text {
+  text-align: left;
+}
+
+table.table .col-number {
+  text-align: center;
+}
+
+table.table tbody tr:nth-child(even) {
+  background-color: #cce5ff;
+}
+
+.table-time {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.col-text {
+  width: 90%;
+  text-align: center;
+}
+
+.topic-infor {
+  display: flex;
+}
+
+.topic-infor .topic-infor-name {
+  font-weight: bold;
+}
+
+.topic-col-left {
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(139, 255, 216);
+}
+
+.topic-col-left .topic-name {
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.topic-col-right {
+  display: inline-block;
+}
+
+.topic-col-right .topic-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  padding: 10px;
+}
+
+.topic-col-right .title {
+  font-weight: bold;
+}
+
+.topic-col-right .content {
+  background-color: white;
+  padding: 10px;
+}
+
+.list-topic {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-new {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 70px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 50px;
-  }
-  
-  h1 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 50px;
-    text-align: left;
-  }
-  
-  .button {
-    text-align: center;
+}
+
+/* .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+} */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
     display: block;
-    border-radius: 5px;
-    padding: 10px;
-    width: 200px;
-    cursor: pointer;
-    margin: 40px 4px 40px 0px;
-  }
-  
-  table.table {
-    border-collapse: collapse;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
     width: 100%;
-  }
-  
-  table.table .col-text {
-    text-align: left;
-  }
-  
-  table.table .col-number {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
     text-align: center;
-  }
-  
-  table.table tbody tr:nth-child(even) {
-    background-color: #cce5ff;
-  }
-  
-  .col-text {
-    width: 90%;
-    text-align: center;
-  }
-  
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
