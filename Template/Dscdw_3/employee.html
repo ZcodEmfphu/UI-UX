@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh Sách Thành Viên</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-10">
+        <div class="card">
+          <div class="card-header">
+            <h3>Danh Sách Thành Viên</h3>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group mb-3">
+                  <label for="gender" class="mr-2">Chọn giới tính:</label>
+                  <select class="form-control" id="gender">
+                    <option>Nam</option>
+                    <option>Nữ</option>
+                    <option>Khác</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="d-flex justify-content-between mb-3">
+                  <span>Tổng số thành viên</span>
+                  <button type="button" class="btn btn-primary">Thêm Thành Viên</button>
+                </div>
+              </div>
+            </div>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr style="background-color: aquamarine;">
+                  <th scope="col">Họ Tên</th>
+                  <th scope="col">Ngày sinh</th>
+                  <th scope="col">Giới tính</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nguyễn Văn A</td>
+                  <td>01/01/1990</td>
+                  <td>Nam</td>
+                  <td>nguyenvana@example.com</td>
+                </tr>
+                <tr>
+                  <td>Trần Thị B</td>
+                  <td>02/02/1992</td>
+                  <td>Nữ</td>
+                  <td>tranthib@example.com</td>
+                </tr>
+                <tr>
+                  <td>Lê Văn C</td>
+                  <td>03/03/1993</td>
+                  <td>Nam</td>
+                  <td>levanc@example.com</td>
+                </tr>
+                <!-- Thêm các hàng khác tại đây -->
+              </tbody>
+            </table>
+          </div>
+          <div class="card-footer text-center">
+            &copy; 2024 Công Ty Của Bạn
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
